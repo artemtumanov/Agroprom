@@ -1,7 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
 
 * {
-    font-family: '', sans-serif;
+    font-family: 'Manrope', sans-serif;
     margin: 0;
     padding: 0;
     h1, h2, h3 {
@@ -17,6 +17,12 @@
 @import 'base/mixins';
 @import 'base/fonts';
 
+@import 'blocks/container';
+@import 'blocks/promo';
+@import 'blocks/nav';
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/best';
 
 
 @import 'blocks/media';

@@ -1,0 +1,59 @@
+.promo {
+    padding-top: 32px;
+    background-color: $background-color;
+    border-radius: 0px 0px 120px 120px;
+    height: 100vh;
+    &__header {
+        position: relative;
+    }
+    &__text {
+        margin-top: 24px;
+        max-width: 536px;
+        color: var(--black, $text-color);
+        font-family: Manrope;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 30px; /* 142.857% */
+        margin-bottom: 81px;
+    }
+    &__button-more {
+        margin-left: 24px;
+    }
+    &__slider {
+        width: 100%;
+        height: 600px;
+    
+    }
+    &__slide {
+        position: relative;
+        &-img {
+            width: 650px;
+            height: 534px;
+            object-fit: contain;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &-line {
+            width: 1628px;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            height: 80%;
+            object-fit: fill;
+        }
+    }
+    &__pagination {
+        left: 0 !important;
+        right: unset !important;
+        padding: 26px;
+        border: 1px solid var(--gray-sup, #DED9C0);
+        border-radius: 0px 20px 20px 0px;
+        .swiper-pagination-bullet {
+            margin: 12px 0 !important;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $main-color;
+        }
+    }
+}

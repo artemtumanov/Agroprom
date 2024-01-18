@@ -1,0 +1,47 @@
+.button {
+    border-radius: 20px;
+    background: var(--green, $main-color);
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    width: 163px;
+    padding: 13px 0;
+    border: none;
+    transition: 0.3s all;
+    &:hover {
+        transform: translateY(-8px);
+    }
+}
+
+.button-more {
+    color: var(--green, $main-color);
+    font-family: Buyan;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 26px; /* 113.043% */
+    outline: none;
+    border: none;
+    background-color: unset;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: -24px;
+        width: 68px;
+        height: 68px;
+        background-color: #FFF;
+        border-radius: 48px;
+        z-index: -1;
+        transition: 0.6s all;
+    }
+    &:hover {
+        &::before {
+            transition: 0.6s all;
+            width: calc(100% + 48px);
+        }
+    }
+}

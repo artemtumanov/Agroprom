@@ -1,0 +1,32 @@
+.subtitle {
+    color: var(--black, $text-color);
+    font-family: Buyan;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 26px; /* 113.043% */
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: '';
+        width: 120px;
+        height: 15px;
+        position: absolute;
+        top: 15px;
+        left: -2px;
+        background: url('../icons/underline.png') center center/contain no-repeat;
+        z-index: -1;
+    }
+}
+
+.title {
+    max-width: 648px;
+    margin-top: 24px;
+    color: var(--black, $text-color);
+    font-family: Buyan;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 95px; /* 105.556% */
+    &_big {
+        font-size: 90px;
+    }
+}
