@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.promo__slider', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
@@ -10,7 +10,18 @@ const swiper = new Swiper('.swiper', {
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.promo__pagination',
     },
   
   });
+
+const lightbox = GLightbox({ loop: true, });
+
+const buttonGrid = document.querySelector('.arrow__right')
+  	  firstSlide = document.querySelector('.photo__grid-first')
+	  secondSlide = document.querySelector('.photo__grid-second');
+
+      buttonGrid.addEventListener('click', () => {
+		firstSlide.classList.toggle('photo__grid-first-show')
+		secondSlide.classList.toggle('photo__grid-second-hidden')
+	  })
