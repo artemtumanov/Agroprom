@@ -53,25 +53,25 @@
     }
 }
 
-.arrow {
-    &__right {
-        display: block;
-        margin: 0 auto;
-        width: 32px;
-        height: 16px;
-        background: url('../icons/arrow_right.png') center center/cover no-repeat;
-        border: none;
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            top: -27px;
-            left: -17px;
-            width: 68px;
-            height: 68px;
-            background-color: #F3F0DA;
-            border-radius: 48px;
-            z-index: -1;
-        }
-    }
-}
+// .arrow {
+//     &__right {
+//         display: block;
+//         margin: 0 auto;
+//         width: 32px;
+//         height: 16px;
+//         background: url('../icons/arrow_right.png') center center/cover no-repeat;
+//         border: none;
+//         position: relative;
+//         &::before {
+//             content: '';
+//             position: absolute;
+//             top: -27px;
+//             left: -17px;
+//             width: 68px;
+//             height: 68px;
+//             background-color: #F3F0DA;
+//             border-radius: 48px;
+//             z-index: -1;
+//         }
+//     }
+// }

@@ -1,7 +1,7 @@
 .subtitle {
     color: var(--black, $text-color);
     font-family: Buyan;
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 26px; /* 113.043% */
     position: relative;
@@ -15,6 +15,14 @@
         left: -2px;
         background: url('../icons/underline.png') center center/contain no-repeat;
         z-index: -1;
+    }
+    &_center {
+        font-size: 23px;
+        text-align: center;
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
