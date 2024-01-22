@@ -54,4 +54,25 @@
     &__next {
         left: 110px;
     }
+    &__pagination {
+        display: block;
+        color: var(--green, $main-color);
+        font-family: Buyan;
+        font-weight: 700;
+        width: 150px;
+        height: 110px;
+        left: unset;
+        bottom: unset;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        .swiper-pagination-current {
+            font-size: 120px;
+            line-height: 125px; /* 104.167% */
+        }
+        .swiper-pagination-total {
+            font-size: 36px;
+            line-height: 40px; /* 111.111% */
+        }
+    }
 }

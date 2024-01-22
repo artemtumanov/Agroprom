@@ -34,12 +34,12 @@ const productSwiper = new Swiper(".partners__slider", {
   },
   spaceBetween: 24,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".partners__pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".partners__next",
+    prevEl: ".partners__prev",
   },
 });
 
@@ -51,13 +51,13 @@ const howSwiper = new Swiper('.how__slider', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.how__pagination',
     type: "fraction",
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".how__next",
+    prevEl: ".how__prev",
   },
 
 });
