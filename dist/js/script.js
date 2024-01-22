@@ -32,7 +32,6 @@ const productSwiper = new Swiper(".partners__slider", {
   grid: {
     rows: 3,
   },
-  mousewheel: true,
   spaceBetween: 24,
   pagination: {
     el: ".swiper-pagination",
@@ -42,4 +41,23 @@ const productSwiper = new Swiper(".partners__slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+const howSwiper = new Swiper('.how__slider', {
+  // Optional parameters
+  direction: 'vertical',
+  speed: 1000,
+  effect: 'coverflow',
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: "fraction",
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
 });
