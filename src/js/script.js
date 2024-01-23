@@ -45,9 +45,8 @@ const productSwiper = new Swiper(".partners__slider", {
 
 const howSwiper = new Swiper('.how__slider', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   speed: 1000,
-  effect: 'coverflow',
 
   // If we need pagination
   pagination: {
@@ -61,3 +60,13 @@ const howSwiper = new Swiper('.how__slider', {
   },
 
 });
+
+const switcher = document.querySelector('.season__switcher')
+	  vegetables = document.querySelector('.season__vegetables')
+	  fruits = document.querySelector('.season__fruits');
+
+switcher.addEventListener('click', () => {
+	switcher.classList.toggle('season__switcher_active')
+	vegetables.classList.toggle('season__vegetables_active')
+	fruits.classList.toggle('season__fruits_active')
+})

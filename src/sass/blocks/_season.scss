@@ -1,0 +1,244 @@
+.season {
+    &__radio {
+        width: 546px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__vegetables, &__fruits {
+        color: var(--black, $text-color);
+        font-family: Buyan;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 85px; /* 106.25% */
+        position: relative;
+        transition: 0.3s all;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            opacity: 0.2;
+            background: var(--black, $text-color);
+            bottom: 0;
+            left: 0;
+        }
+        &_active {
+            transition: 0.3s all;
+            color: var(--green, $main-color);
+            &::after {
+                background: var(--green, $main-color);
+            }
+        }
+    }
+    &__switcher {
+        width: 56px;
+        height: 28px;
+        border-radius: 32px;
+        background: var(--green, $main-color);
+        cursor: pointer;
+        position: relative;
+        &::after {
+            transition: 0.3s all;
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 32px;
+            background: #FFF;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 4px;
+        }
+        &_active {
+            &::after {
+                transition: 0.3s all;
+                transform: translate(28px, -50%);
+            }
+        }
+    }
+    &__calendar {
+        display: flex;
+        position: relative;
+    }
+    &__months {
+        padding-top: 296px;
+        margin-right: 145px;
+    }
+    &__month {
+        color: var(--black, $text-color);
+        font-family: Buyan;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px; /* 107.143% */
+        margin-bottom: 38px;
+    }
+    &__wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-top: 100px;
+        &::-webkit-scrollbar-track {
+            background: orange;
+        }
+    }
+    &__overlay {
+        width: 1000px;
+        height: 50px;
+        transform: rotate(90deg) translateX(50%);
+        position: absolute;
+        top: 83px;
+        right: -475px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.60) 20.31%, #FFF 100%);;
+    }
+    &__item {
+        display: inline-block;
+        width: 120px;
+        position: relative;
+        &:hover {
+            background-color: $background-color;
+            border-radius: 60px;
+        }
+        &:nth-child(1) {
+            z-index: 20;
+        }
+        &:nth-child(2) {
+            z-index: 19;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Апельсин'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            z-index: 18;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Арбуз'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(4) {
+            z-index: 17;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Киви'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(5) {
+            z-index: 16;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Клубника'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(6) {
+            z-index: 15;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Лемон'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(7) {
+            z-index: 14;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Малина'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(8) {
+            z-index: 13;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Хурма'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(9) {
+            z-index: 12;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Вишня'; 
+                    }
+                }
+            }
+        }
+        &:nth-child(10) {
+            z-index: 11;
+            .season__image {
+                &:hover {
+                    &::before {
+                        content: 'Мандарин'; 
+                    }
+                }
+            }
+        }
+    }
+    &__image {
+        box-sizing: content-box;
+        width: 136px;
+        height: 136px;
+        margin-bottom: 60px;
+        position: relative;
+        left: -8px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+        &:hover {
+            &::before {
+                content: 'Персик';
+                position: absolute;
+                border-radius: 12px;
+                background: var(--black, #2F4237);
+                box-shadow: 0px 15px 20px 0px rgba(37, 37, 37, 0.02);
+                top: -54px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 16px 20px;
+                color: #FFF;
+                font-family: Buyan;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 30px; /* 107.143% */
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../icons/down.png') center center/contain no-repeat;
+                width: 6.5px;
+                height: 14px;
+                top: 2px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+    }
+    &__icon {
+        margin: 0 auto;
+        width: 24px;
+        height: 24px;
+        margin-bottom: 44px;
+    }
+}
