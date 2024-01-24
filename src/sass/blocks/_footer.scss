@@ -60,6 +60,9 @@
         font-weight: 400;
         line-height: 30px; /* 142.857% */
         text-decoration: none;
+        &:hover {
+            color: $main-color;
+        }
     }
     &__email {
         margin-top: 8px;
@@ -82,5 +85,22 @@
         background-color: #FFF;
         text-decoration: none;
         margin-right: 12px;
+    }
+    &__bottom {
+        margin-top: 140px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    &__dev {
+        display: flex;
+        align-items: center;
+    }
+    &__dev-img {
+        margin-left: 12px;
+    }
+    &__button-more {
+        text-align: left;
+        width: 208px;
     }
 }

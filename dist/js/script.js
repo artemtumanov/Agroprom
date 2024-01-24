@@ -1,23 +1,31 @@
+//Конфигурация swiper slider в секции promo
 const promoSwiper = new Swiper('.promo__slider', {
-    // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
-    },
-    speed: 1000,
-    effect: 'coverflow',
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: true,
+    // },
+    speed: 800,
+    effect: 'fade',
   
-    // If we need pagination
     pagination: {
       el: '.promo__pagination',
     },
-  
+    breakpoints: {
+      1500: {
+        direction: 'vertical',
+      },
+      
+    },
   });
 
+
+//Подключаем Glightbox для увеличения картинок при клике
 const lightbox = GLightbox({ loop: true, });
 
+
+//Скрипт для секции photo, переключающий сетки
 const buttonGrid = document.querySelector('.photo__button')
   	  firstSlide = document.querySelector('.photo__grid-first')
 	  secondSlide = document.querySelector('.photo__grid-second');
@@ -27,6 +35,8 @@ const buttonGrid = document.querySelector('.photo__button')
 		secondSlide.classList.toggle('photo__grid-second-hidden')
 	  });
 
+
+//Конфигурация swiper slider для секции partners
 const productSwiper = new Swiper(".partners__slider", {
   slidesPerView: 5,
   grid: {
@@ -43,6 +53,8 @@ const productSwiper = new Swiper(".partners__slider", {
   },
 });
 
+
+//Конфигурация swiper slider для секции how
 const howSwiper = new Swiper('.how__slider', {
   // Optional parameters
   direction: 'horizontal',
@@ -58,9 +70,10 @@ const howSwiper = new Swiper('.how__slider', {
     nextEl: ".how__next",
     prevEl: ".how__prev",
   },
-
 });
 
+
+//Скрипт свитчера Овощи - Фрукты
 const switcher = document.querySelector('.season__switcher')
 	  vegetables = document.querySelector('.season__vegetables')
 	  fruits = document.querySelector('.season__fruits');
