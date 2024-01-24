@@ -69,4 +69,5 @@ switcher.addEventListener('click', () => {
 	switcher.classList.toggle('season__switcher_active')
 	vegetables.classList.toggle('season__vegetables_active')
 	fruits.classList.toggle('season__fruits_active')
-})
+});
+

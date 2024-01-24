@@ -78,8 +78,17 @@
         overflow-y: hidden;
         white-space: nowrap;
         padding-top: 100px;
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 60px;
+            background: var(--green, $main-color);
+        }
         &::-webkit-scrollbar-track {
-            background: orange;
+            border-radius: 60px;
+            background: var(--green-bg, #DDF3D5);
         }
     }
     &__overlay {

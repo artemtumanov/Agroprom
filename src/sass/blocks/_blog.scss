@@ -1,0 +1,63 @@
+.blog {
+    padding-top: 200px;
+    position: relative;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 648px);
+        grid-template-rows: 360px;
+        grid-auto-rows: 360px;
+        gap: 24px;
+    }
+    &__item {
+        padding: 24px;
+        background-color: #DDF3D5;
+        border-radius: 24px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            box-shadow: 0px 20px 50px 0px rgba(17, 58, 35, 0.15);
+        }
+    }
+    &__img {
+        width: 300px;
+        height: 312px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__name {
+        width: 276px;
+        color: var(--black, $text-color);
+        font-family: Buyan;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px; /* 107.143% */
+    }
+    &__date {
+        width: 276px;
+        color: var(--black, $text-color);
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px; /* 150% */
+    }
+    &__button {
+        margin-top: 100px;
+    }
+    &__line {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: -1;
+    }
+}

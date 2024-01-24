@@ -1,0 +1,45 @@
+.charity {
+    padding-top: 221px;
+    padding-bottom: 181px;
+    &__button {
+        margin-top: 100px;
+    }
+    &__grid {
+        display: grid;
+        margin-top: 60px;
+        grid-template-columns: repeat(4, 312px);
+        grid-template-rows: 300px;
+        grid-auto-rows: 300px;
+        gap: 24px;
+    }
+    &__item {
+        border-radius: 20px;
+        background: var(--bg, $background-color);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.3s all;
+        position: relative;
+        top: 0;
+        &:hover {
+            top: -8px;
+            box-shadow: 0px 20px 50px 0px rgba(17, 58, 35, 0.15);
+        }
+    }
+    &__name {
+        color: var(--black, $text-color);
+        font-family: Buyan;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px; /* 107.143% */
+    }
+    &__date {
+        color: var(--black, $text-color);
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px; /* 150% */
+    }
+}
