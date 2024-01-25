@@ -6,6 +6,7 @@
     line-height: 26px; /* 113.043% */
     position: relative;
     z-index: 1;
+    user-select: none;
     &::after {
         content: '';
         width: 120px;

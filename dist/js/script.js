@@ -25,15 +25,15 @@ const promoSwiper = new Swiper('.promo__slider', {
 const lightbox = GLightbox({ loop: true, });
 
 
-//Скрипт для секции photo, переключающий сетки
-// const buttonGrid = document.querySelector('.photo__button')
-//   	  firstSlide = document.querySelector('.photo__grid-first')
-// 	  secondSlide = document.querySelector('.photo__grid-second');
+// Скрипт для секции photo, переключающий сетки
+const buttonGrid = document.querySelector('.photo__button')
+  	  firstSlide = document.querySelector('.photo__grid-first')
+	  secondSlide = document.querySelector('.photo__grid-second');
 
-//       buttonGrid.addEventListener('click', () => {
-// 		firstSlide.classList.toggle('photo__grid-first-show')
-// 		secondSlide.classList.toggle('photo__grid-second-hidden')
-// 	  });
+      buttonGrid.addEventListener('click', () => {
+		firstSlide.classList.toggle('photo__grid-first-show')
+		secondSlide.classList.toggle('photo__grid-second-hidden')
+	  });
 
 
 //Конфигурация swiper slider для секции partners
