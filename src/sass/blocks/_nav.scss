@@ -102,8 +102,9 @@
         margin-left: 8px;
         margin-right: 24px;
         text-decoration: none;
+        transition: 0.3s all;
         &:hover {
-            color: var(--black, $text-color);
+            color: var(--black, $main-color);
         }
     }
     &__bot {
@@ -113,6 +114,16 @@
         width: 1098px;
         display: flex;
         justify-content: space-between;
+    }
+    &__burger {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        background-color: #E3DA9D;
+        border-radius: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
     }
 }
 .btn.show {

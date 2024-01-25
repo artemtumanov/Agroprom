@@ -2,10 +2,10 @@
 const promoSwiper = new Swiper('.promo__slider', {
     direction: 'horizontal',
     loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: true,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
     speed: 800,
     effect: 'fade',
   
@@ -26,14 +26,14 @@ const lightbox = GLightbox({ loop: true, });
 
 
 //Скрипт для секции photo, переключающий сетки
-const buttonGrid = document.querySelector('.photo__button')
-  	  firstSlide = document.querySelector('.photo__grid-first')
-	  secondSlide = document.querySelector('.photo__grid-second');
+// const buttonGrid = document.querySelector('.photo__button')
+//   	  firstSlide = document.querySelector('.photo__grid-first')
+// 	  secondSlide = document.querySelector('.photo__grid-second');
 
-      buttonGrid.addEventListener('click', () => {
-		firstSlide.classList.toggle('photo__grid-first-show')
-		secondSlide.classList.toggle('photo__grid-second-hidden')
-	  });
+//       buttonGrid.addEventListener('click', () => {
+// 		firstSlide.classList.toggle('photo__grid-first-show')
+// 		secondSlide.classList.toggle('photo__grid-second-hidden')
+// 	  });
 
 
 //Конфигурация swiper slider для секции partners
@@ -74,13 +74,24 @@ const howSwiper = new Swiper('.how__slider', {
 
 
 //Скрипт свитчера Овощи - Фрукты
-const switcher = document.querySelector('.season__switcher')
-	  vegetables = document.querySelector('.season__vegetables')
-	  fruits = document.querySelector('.season__fruits');
+// const switcher = document.querySelector('.season__switcher')
+// 	  vegetables = document.querySelector('.season__vegetables')
+// 	  fruits = document.querySelector('.season__fruits');
 
-switcher.addEventListener('click', () => {
-	switcher.classList.toggle('season__switcher_active')
-	vegetables.classList.toggle('season__vegetables_active')
-	fruits.classList.toggle('season__fruits_active')
+// switcher.addEventListener('click', () => {
+// 	switcher.classList.toggle('season__switcher_active')
+// 	vegetables.classList.toggle('season__vegetables_active')
+// 	fruits.classList.toggle('season__fruits_active')
+// });
+
+//Скрип открытие/закрытие бургер-меню
+const burger = document.querySelector('.nav__burger')
+      menu = document.querySelector('.menu')
+      closeMenu = document.querySelector('.menu__close');
+
+burger.addEventListener('click', () => {
+  menu.classList.add('active');
 });
-
+closeMenu.addEventListener('click', ()=> {
+  menu.classList.remove('active')
+});
