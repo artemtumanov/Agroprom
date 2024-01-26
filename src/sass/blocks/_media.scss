@@ -21,6 +21,11 @@
             border-radius: 0px 0px 120px 120px;
         }
     }
+    .partners {
+        &__line {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1366px) {
@@ -48,6 +53,31 @@
         }
         &__actual-grid {
             grid-template-columns: repeat(3,300px);
+        }
+    }
+    .fermers {
+        &__wrapper {
+            overflow-x: scroll;
+            white-space: nowrap;
+            padding-bottom: 20px;
+            &::-webkit-scrollbar {
+                width: 10px;
+                height: 8px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 60px;
+                background: var(--green, $main-color);
+            }
+            &::-webkit-scrollbar-track {
+                border-radius: 60px;
+                background: var(--green-bg, #DDF3D5);
+            }
+        }
+        &__item {
+            margin-right: 24px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -126,6 +156,19 @@
             }
         }
     }
+    .how {
+        &__pagination {
+            top: 20%;
+            transform: translateY(-20%);
+            right: 10%;
+        }
+        &__next {
+            left: 125px;
+        }
+        &__prev {
+            left: 30px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -170,6 +213,9 @@
             max-width: 100%;
             margin-bottom: 10px;
         }
+        &__slide {
+            border-radius: 0px 0px 48px 48px;
+        }
     }
     .title {
         margin-top: 20px;
@@ -208,6 +254,17 @@
                 margin-right: 0;
             }
         }
+        &__link {
+            &:hover {
+                transform: unset;
+                .best__name {
+                    color: var(--black, $text-color);
+                }
+            }
+        }
+        &__name {
+            margin-top: 40px;
+        }
         &__actual-grid {
             grid-template-columns: 1fr;
         }
@@ -219,11 +276,13 @@
         padding-top: 140px;
         padding-bottom: 120px;
         &__grid {
-            margin-top: 40px;
             display: block;
             overflow-x: scroll;
             overflow-y: hidden;
             white-space: nowrap;
+            &::-webkit-scrollbar {
+                display: none;
+            }
             &-first, &-second {
                 display: inline-block;
                 overflow-x: scroll;
@@ -232,6 +291,9 @@
                 opacity: 1;
                 overflow-y: hidden;
                 white-space: nowrap;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
             }
             &-first {
                 margin-right: 24px;
@@ -250,6 +312,89 @@
         }
         &__button {
             display: none;
+        }
+        &__size {
+            margin-top: 40px;
+        }
+    }
+    .partners {
+        padding-top: 0;
+        height: unset;
+        &__subtitle {
+            text-align: left;
+            &::after {
+                left: -2px;
+                transform: unset;
+            }
+        }
+        &__block {
+            padding: 30px 0 30px 30px;
+            height: unset;
+        }
+        &__next, &__prev, &__pagination {
+            display: none;
+        }
+        &__slider {
+            display: inline-block;
+            overflow-x: scroll;
+            height: 150px;
+            padding: 0;
+            margin-top: 32px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__slide {
+            padding: 0;
+            width: 242px !important;
+            height: 150px !important;
+            margin-right: 16px;
+            &:hover {
+                top: 0;
+                box-shadow: unset;
+            }
+        }
+    }
+    .fermers {
+        padding-top: 20px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__button {
+            margin-top: 60px;
+        }
+        &__img {
+            &:hover {
+                top: 0;
+                box-shadow: unset;
+            }
+        }
+    }
+    .how {
+        border-radius: 48px;
+        padding-bottom: 90px;
+        &__slider {
+            margin-top: 48px;
+            width: 100%;
+            height: 1000px;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+        &__pagination {
+            top: 90%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        &__next {
+            left: 60%;
+            bottom: 20%;
+            transform: translateX(-60%);
+        }
+        &__prev {
+            left: 40%;
+            bottom: 20%;
+            transform: translateX(-40%);
         }
     }
 }
@@ -270,9 +415,6 @@
             height: 243px;
             object-fit: cover;
             margin-bottom: 37px;
-        }
-        &__slide {
-            border-radius: 0;
         }
         &__slider {
             height: 700px;
@@ -345,6 +487,66 @@
             font-size: 16px;
             line-height: 24px;
             margin-top: 12px;
+        }
+    }
+    .partners {
+        &__block {
+            padding: 24px 0 24px 24px;
+        }
+    }
+    .fermers {
+        &__item {
+            width: 242px;
+        }
+        &__img {
+            width: 242px;
+            height: 194px;
+            img {
+                object-fit: cover;
+            }
+        }
+        &__location {
+            margin-top: 24px;
+        }
+        &__name {
+            margin-top: 12px;
+        }
+        &__type {
+            margin-bottom: 8px;
+        }
+    }
+    .how {
+        padding-bottom: 60px;
+        &__img {
+            width: 328px;
+            height: 300px;
+            img {
+                object-fit: contain;
+            }
+        }
+        &__slide {
+            overflow: hidden;
+        }
+        &__head {
+            font-size: 32px;
+            line-height: 36px; /* 112.5% */
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 24px; /* 150% */
+        }
+        &__next {
+            left: 75%;
+            bottom: 20%;
+            transform: translateX(-75%);
+        }
+        &__prev {
+            left: 25%;
+            bottom: 20%;
+            transform: translateX(-25%);
+        }
+        &__pagination {
+            top: 85%;
         }
     }
 }

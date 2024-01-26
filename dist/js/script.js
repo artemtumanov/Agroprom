@@ -16,7 +16,6 @@ const promoSwiper = new Swiper('.promo__slider', {
       1500: {
         direction: 'vertical',
       },
-      
     },
   });
 
@@ -50,6 +49,29 @@ const productSwiper = new Swiper(".partners__slider", {
   navigation: {
     nextEl: ".partners__next",
     prevEl: ".partners__prev",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    769: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 2,
+      grid: {
+        rows: 1,
+      },
+    },
+    320: {
+      slidesPerView: 1,
+      grid: {
+        rows: 1,
+      },
+    },
   },
 });
 
