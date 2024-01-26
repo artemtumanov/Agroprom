@@ -1,6 +1,6 @@
 .events {
-    margin-top: 160px;
-    margin-bottom: 200px;
+    padding-top: 160px;
+    padding-bottom: 200px;
     &__block {
         background-color: $background-color;
         width: 100%;
@@ -10,8 +10,7 @@
         border-radius: 20px;
     }
     &__img {
-        width: 100%;
-        height: 100%;
+        width: 560px;
         position: absolute;
         top: 0;
         right: 0;

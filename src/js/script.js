@@ -96,16 +96,16 @@ const howSwiper = new Swiper('.how__slider', {
 
 
 //Скрипт свитчера Овощи - Фрукты
-// const switcher = document.querySelector('.season__switcher')
-// 	  vegetables = document.querySelector('.season__vegetables')
-// 	  fruits = document.querySelector('.season__fruits');
+const switcher = document.querySelector('.season__switcher')
+	  vegetables = document.querySelector('.season__vegetables')
+	  fruits = document.querySelector('.season__fruits');
 
-// switcher.addEventListener('click', () => {
-// 	switcher.classList.toggle('season__switcher_active')
-// 	vegetables.classList.toggle('season__vegetables_active')
-// 	fruits.classList.toggle('season__fruits_active')
-// });
-
+switcher.addEventListener('click', () => {
+	switcher.classList.toggle('season__switcher_active')
+	vegetables.classList.toggle('season__vegetables_active')
+	fruits.classList.toggle('season__fruits_active')
+  
+});
 //Скрип открытие/закрытие бургер-меню
 const burger = document.querySelector('.nav__burger')
       menu = document.querySelector('.menu')
