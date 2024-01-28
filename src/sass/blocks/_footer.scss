@@ -21,6 +21,7 @@
         } 
     }
     &__text {
+        z-index: 2;
         color: var(--black, $text-color);
         font-family: Manrope;
         font-size: 14px;
@@ -102,5 +103,8 @@
     &__button-more {
         text-align: left;
         width: 208px;
+    }
+    hr {
+        display: none;
     }
 }

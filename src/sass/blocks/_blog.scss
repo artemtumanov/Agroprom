@@ -2,8 +2,9 @@
     padding-top: 200px;
     position: relative;
     &__grid {
+        margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(2, 648px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 360px;
         grid-auto-rows: 360px;
         gap: 24px;
@@ -60,4 +61,5 @@
         left: 0;
         z-index: -1;
     }
+    
 }

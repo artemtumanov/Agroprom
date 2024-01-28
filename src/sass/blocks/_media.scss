@@ -26,6 +26,11 @@
             display: none;
         }
     }
+    .blog {
+        &__line {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1366px) {
@@ -80,6 +85,14 @@
             }
         }
     }
+    .blog {
+        &__grid {
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -109,6 +122,16 @@
     .events {
         &__img {
             width: 349px;
+        }
+    }
+    .news {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .charity {
+        &__grid {
+            grid-template-columns: repeat(3,1fr);
         }
     }
 }
@@ -183,6 +206,11 @@
         }
         &__text {
             width: 400px;
+        }
+    }
+    .charity {
+        &__grid {
+            grid-template-columns: repeat(2,1fr);
         }
     }
 }
@@ -431,6 +459,138 @@
             width: 100%;
         }
     }
+    .blog {
+        &__grid {
+            margin-top: 40px;
+            
+        }
+        &__item {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 16px;
+            justify-content: flex-end;
+            &:hover {
+                box-shadow: unset;
+            }
+        }
+        &__img {
+            width: 270px;
+            height: 190px;
+        }
+        &__content {
+            margin-top: 16px;
+        }
+        &__date {
+            margin-top: 40px;
+        }
+        &__button {
+            margin-top: 62px;
+        }
+    }
+    .news {
+        padding-top: 140px;
+        &__grid {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__item {
+            width: 242px;
+            &:hover {
+                .news__img {
+                    top: 0;
+                    box-shadow: unset;
+                }
+            }
+        }
+        &__img {
+            width: 242px;
+        }
+        &__name {
+            font-size: 23px;
+            line-height: 26px; /* 113.043% */
+        }
+    }
+    .charity {
+        padding: 140px 0 120px 0;
+        &__grid {
+            margin-top: 40px;
+            display: flex;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__item {
+            padding: 16px;
+            justify-content: flex-start;
+            width: 242px;
+            height: 251px;
+            &:hover {
+                top: 0;
+                box-shadow: unset;
+            }
+        }
+        &__date {
+            margin-top: auto;
+        }
+        &__name {
+            width: 210px;
+            font-size: 23px;
+            line-height: 26px; /* 113.043% */
+        }
+        &__button {
+            margin-top: 60px;
+        }
+    }
+    .footer {
+        padding: 36px 16px 25px 16px;
+        border-radius: 48px 48px 0 0;
+        .accordion {
+            display: none;
+        }
+        &__top {
+            grid-template-columns: 1fr;
+        }
+        &__row-reverse {
+            flex-direction: row-reverse;
+            margin-bottom: 24px;
+        }
+        &__logo {
+            width: 72px;
+            height: 90px;
+        }
+        &__center {
+            align-items: center;
+        }
+        &__contacts {
+            text-align: center;
+        }
+        &__socials {
+            margin-top: 24px;
+        }
+        hr {
+            display: block;
+            margin-top: 32px;
+            margin-bottom: 53px;
+        }
+        &__bottom {
+            margin-top: 0;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+        &__button-more {
+            grid-row: 1 / 2;
+            margin-bottom: 53px;
+        }
+        &__dev {
+            margin-top: 12px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -646,6 +806,40 @@
         }
         &__overlay {
             display: none;
+        }
+    }
+    .blog {
+        &__grid {
+            grid-template-columns: repeat(2,242px);
+        }
+        &__img {
+            width: 210px;
+            height: 160px;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__name {
+            width: 100%;
+            font-size: 23px;
+        }
+        &__date {
+            margin-top: 68px;
+        }
+    }
+    .news {
+        &__img {
+            width: 242px;
+            height: 160px;
+        }
+        &__button {
+            margin-top: 60px;
+        }
+    }
+    .footer {
+        &__address, &__phone, &__email {
+            font-size: 18px;
+            line-height: 26px; /* 144.444% */
         }
     }
 }

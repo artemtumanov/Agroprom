@@ -3,9 +3,9 @@
     &__grid {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(3, 424px);
-        grid-template-rows: minmax(425, auto);
-        grid-auto-rows: minmax(425, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(425px, auto);
+        grid-auto-rows: minmax(425px, auto);
         gap: 24px;
     }
     &__item {
