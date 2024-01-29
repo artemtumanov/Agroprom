@@ -1,0 +1,12 @@
+#nav_active {
+    &::before {
+        content: '';
+        width: 120px;
+        height: 15px;
+        position: absolute;
+        top: 23px;
+        left: 3px;
+        background: url('../icons/underline.png') center center/contain no-repeat;
+        z-index: -1;
+    }
+}

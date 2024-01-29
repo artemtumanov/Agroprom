@@ -28,6 +28,7 @@
         border: none;
         transition: 0.4s all;
         padding: 8px;
+        z-index: 0;
         &::after {
             vertical-align: 2px;
             margin-left: 10px;

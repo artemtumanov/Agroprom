@@ -297,6 +297,9 @@
             margin-right: 16px;
             &:last-child {
                 margin-right: 0;
+                .best__img {
+                    object-fit: contain;
+                }
             }
         }
         &__link {
@@ -349,6 +352,10 @@
                 }
                 &:last-child {
                     margin-right: 0;
+                }
+                &:hover {
+                    transform: none;
+                    box-shadow: unset;
                 }
             }
         }
