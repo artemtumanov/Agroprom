@@ -1,0 +1,51 @@
+.about-company {
+    &__title {
+        margin-top: 0;
+    }
+    &__nav {
+        padding-top: 32px;
+        background-color: $background-color;
+        position: relative;
+        .nav {
+            padding-bottom: 161px;
+        }
+    }
+    &__header {
+        padding-bottom: 60px;
+        background-color: $background-color;
+        border-radius: 0px 0px 120px 120px;
+    }
+    &__link {
+        color: var(--gray-text, #A59F85);
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        text-decoration: none;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__block {
+        padding-top: 100px;
+        padding-bottom: 170px;
+    }
+    &__head {
+        max-width: 536px;
+        color: var(--black, $text-color);
+        font-family: Buyan;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 63px; /* 105% */
+        padding-top: 109px;
+    }
+    &__text {
+        margin-top: 16px;
+        max-width: 536px;
+        color: var(--black, $text-color);
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px; /* 144.444% */
+    }
+}
