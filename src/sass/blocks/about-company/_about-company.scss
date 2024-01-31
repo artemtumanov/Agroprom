@@ -48,4 +48,52 @@
         font-weight: 400;
         line-height: 26px; /* 144.444% */
     }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        object-fit: cover;
+    }
+    &__documents {
+        position: relative;
+        padding-bottom: 160px;
+        &-content {
+            border-radius: 20px;
+            background: var(--green-bg, #DDF3D5);
+            padding: 100px;
+        }
+        &-head {
+            color: var(--black, #2F4237);
+            font-family: Buyan;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 63px; /* 105% */
+            margin-top: 24px;
+        }
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 100px;
+            cursor: pointer;
+            z-index: 1;
+            &::after {
+                content: '';
+                position: absolute;
+                top: -21px;
+                left: -18px;
+                width: 68px;
+                height: 68px;
+                background-color:#fff;
+                border-radius: 100%;
+                z-index: -1;
+            }
+        }
+        &-bg {
+            width: 1287px;
+            position: absolute;
+            top: 31px;
+            left: 18px;
+        }
+    }
 }
